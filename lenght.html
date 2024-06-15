@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2><li>lenght</li></h2>
+    <p id="hi"></p>
+    <p id="hi1"></p>
+    <p id="hi2"></p>
+    <p id="hi3"></p>
+    <p id="hi4"></p>
+    <p id="hi5"></p>
+    <h1>ary.pop()</h1>
+    <p id="hi6"></p>
+    <p id="hi7"></p>
+    <h1>ary.push()</h1>
+    <p id="hi8"></p>
+    <h1>ary.shift()</h1>
+    <p id="hi9"></p>
+    <h1>ary.unshift()</h1>
+
+    <p id="hi11"></p>
+    <h1>ary.sort()</h1>
+    <p id="hi12"></p>
+    <h1>ary.reverse()</h1>
+    <p id="hi10"></p>
+    <script> 
+    let b = [];
+    b[0] = 'niraj';
+    b[1] = 'jambucha';
+    b[2] = '09.06';
+    b[3] = '18';
+    document.getElementById("hi").innerHTML = b;
+    document.getElementById("hi1").innerHTML = b.length;
+
+    let c = b.length;
+    let d = b.toString();
+    document.getElementById("hi2").innerHTML = b.length + " " + c ;
+    document.getElementById("hi3").innerHTML = b.length + " " +  c  + " " + typeof(c) + " " + typeof(b) + " " + typeof(d) ;
+
+    let niraj = ["niraj","jambucha","niraj","jambucha"];
+    document.getElementById("hi6").innerHTML = niraj ;
+    niraj.pop();
+    document.getElementById("hi7").innerHTML =  niraj ;
+
+    niraj.push("09");
+    document.getElementById("hi8").innerHTML =  niraj;
+
+    niraj.shift();
+    document.getElementById("hi9").innerHTML =  niraj;
+
+    niraj.unshift("09");
+    document.getElementById("hi10").innerHTML =  niraj;
+
+    let hello = [6,7,8,9,5,4,3,2,1,];
+    hello.sort();
+    document.getElementById("hi11").innerHTML = hello ;
+
+    hello.reverse();
+    document.getElementById("hi12").innerHTML = hello ;
+
+    let a = "abcdefghijklmnopqrstuvwxyZ" ;
+        let a1 = a.length
+        document.getElementById("hi4").innerHTML = a ;
+        document.getElementById("hi5").innerHTML = a1 ;  
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js if,else and else if</title>
+</head>
+<body>
+    <h2><li>if / else condition</li></h2>
+    <h2>if</h2>
+    <p id="hi1"></p>
+
+    <h2>if else</h2>
+   <input type="text" id="niraj">
+   <button onclick="room()">click me</button>
+   <p id="hello"></p>
+
+ <input type="text" id="vivek">
+<button onclick="boom()">click me</button>
+<p id="day"></p>
+
+<h2>else if</h2>
+<input type="text" id="ram">
+<button onclick="ram()">click me</button>
+<p id="nihght"></p>
+
+<h2>good mornig</h2>
+<input type="text" id="sita">
+<button onclick="sita()">click me</button>
+<p id="good day"></p>
+
+<h2>pattern</h2>
+<input type="text" id="new">
+<button onclick="dev()">click me</button>           
+<p id="tree"></p>
+
+
+<p id="red"></p>
+
+<p id="bleck"></p>
+ 
+    <script>
+          let k = new Date().getDate();
+         let b = "good day" ;
+         if (k > 10){
+             b = "good day";
+         }
+         document.getElementById("hi1").innerHTML = b ;
+
+
+        function room(){
+            let niraj1 = document.getElementById("niraj").value;
+            let niraj2 = " ";
+            if (niraj1 < 20){
+                niraj2 = "hii  "  + niraj1;
+            }else{
+                niraj2 = "hello  " + niraj1;
+            }
+            document.getElementById("hello").innerHTML = niraj2;
+        }
+
+
+        function boom(){
+         let a1 = 5 ;
+         let c = " " ;  
+         if (a1 > 10){  
+             c = "good day"  ;
+         }else{
+             c = "bed day" ;
+         }
+        
+         document.getElementById("day").innerHTML = c ;
+
+        }
+
+         
+        function ram(){
+        let d = document.getElementById("ram").value;
+        let f = "";
+        if (d < 10){
+            f = "hi niraj" + f;
+     
+        }else if (d < 20){
+           f = "hii vivek" + f;
+        }
+        document.getElementById("nihght").innerHTML = f;
+       }
+
+       function sita(){ 
+       let v = document.getElementById("sita").value;
+       let v1 = " ";
+       if ((v >= 7) && (v <= 12 )){
+           v1 = "good morning "
+
+       }else if (v <= 5){
+           v1 = "good afternoon";
+       }else{
+           v1 = "good evening";
+       }
+       document.getElementById("good day").innerHTML = v1;
+
+      }
+
+      function dev(){
+      let s = document.getElementById("new").value;
+      // console.log(s);  
+      let test = " ";
+      for (let a=1; a<=s; a++){
+          test +=" * "
+          for(let b=a; b<=s; b++){
+        test += " ";
+          }
+        test += "<br>";
+         }
+      document.getElementById("tree").innerHTML = test;
+
+    }
+ 
+    let name = ["jambucha","niraj","doller","vivek"];
+    document.getElementById("red").innerHTML = name[0] ;
+    let test1 = " " ;
+    let leg = name.lenght;
+    let a;
+    for (a=0; a < leg; a++){
+        test1 +=  name[a]+ "<br>";
+        document.getElementById("red").innerHTML = test1;
+    }
+
+    let day = new Date().getDay();
+    //  day = 0;
+     console.log(day);
+    let dayname;
+    switch(day){
+        case 0 :
+        dayname = "sunday"; 
+        break;
+        case 1 :    
+        dayname = "monday"; 
+        break;
+        case 2 :
+        dayname = "tuesday"; 
+        break;
+        case 3 :
+        dayname = "wednesday"; 
+        break;
+        case 4 :
+        dayname = "thursday"; 
+        break;
+        case 5 :
+        dayname = "friday"; 
+        break;
+        case 6 :
+        dayname = "saturday"; 
+        break;      
+        default:
+            dayname = "this is not found";
+    
+    }
+    document.getElementById("bleck").innerHTML = dayname;
+
+    </script>
+    
+    
+</body>
+</html> 

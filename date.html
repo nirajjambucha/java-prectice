@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h2>date</h2>
+    <pre>
+        get fullyear()
+        get data()
+        get day()
+        get hours()
+        get minutes()
+        get seconds()
+    </pre>
+    <h2>time</h2>
+    <p id="hello"></p>
+    <h2>day</h2>
+    <p id="hello1"></p>
+    <h2>month</h2>
+    <p id="hello2"></p>
+    <h2>year</h2>
+    <p id="hello3"></p>
+    <h2>time</h2>
+    <p id="hello4"></p>
+    <h2>hours</h2>
+    <p id="hello5"></p>
+    <h2>minutes</h2>
+    <p id="hello6"></p>
+    <h2>seconds</h2>
+    <p id="hello7"></p>
+    <h2>time set</h2>
+    <p id="hello8"></p>
+    <p id="hello9"></p>
+   
+    <script>
+
+        let d = new Date(); 
+        let d1 = new Date().getDay(); 
+        let d2 = new Date().getMonth(); 
+        let d3 = new Date().getFullYear(); 
+        let d4 = new Date().getTime(); 
+        let d5 = new Date().getHours();  
+        let d6 = new Date().getMinutes(); 
+        let d7 = new Date().getSeconds(); 
+        let d8 = new Date();d8.setFullYear(2008,2,15)
+        let d9 = new Date();d9.setFullYear(2006,6,9)
+
+        document.getElementById("hello").innerHTML = new Date();
+        document.getElementById("hello1").innerHTML = d1;
+        document.getElementById("hello2").innerHTML = d2;
+        document.getElementById("hello3").innerHTML = d3;
+        document.getElementById("hello4").innerHTML = d4;
+        document.getElementById("hello5").innerHTML = d5;
+        document.getElementById("hello6").innerHTML = d6;
+        document.getElementById("hello7").innerHTML = d7;
+        document.getElementById("hello8").innerHTML = d8;
+        document.getElementById("hello9").innerHTML = d9;
+        
+    </script>
+</body>
+</html>

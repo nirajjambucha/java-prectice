@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h2>return</h2>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+    <p id="demo6"></p>
+
+    <p id="hi9"></p>
+    <p id="hi10"></p>
+    <p id="by1"></p>
+    <p id="by2"></p>
+ 
+     <script>
+
+         let hi = {
+             firstname : "niraj",
+             lastname  : "jambucha",
+             age       : 20, 
+             car : ["bmw","supra"],      
+             hello : {   
+                 sarname : "jambucha",   
+                 name    : "niraj",                                                                                                                                
+                 age     : "18",
+             },
+             salary : function(a,b){
+                 return a+b ;
+             },
+             add : function(){
+                 return hi.firstname + " " + hi.lastname;
+                 return this.firstname + "  " + this.lastname
+             }
+        }
+         document.getElementById("demo1").innerHTML = hi.firstname + " " + hi["lastname"];
+         document.getElementById("demo2").innerHTML = hi.car;
+         document.getElementById("demo3").innerHTML = hi.car[1];
+         document.getElementById("demo4").innerHTML = hi.hello.sarname + " " + hi.hello["name"] + " " + hi.hello.age;
+         document.getElementById("demo5").innerHTML = hi.salary(1000,2000);
+         document.getElementById("demo6").innerHTML = hi.add();
+
+
+         
+        function myname(){
+            document.getElementById("hi9").innerHTML = "hello niraj";
+        }
+        myname();
+
+        function myroom(){
+            return "hiii"
+        }
+        document.getElementById("hi10").innerHTML = myroom();
+
+       let boy = myboy()
+        function myboy(){
+            return "byyy"
+        }
+        document.getElementById("by1").innerHTML = "this is my function" + " " + boy;
+
+
+        let girl = mybool (10,20)
+        function mybool(a,b){
+            return "hellooo" + " " + (a + b);
+
+        }
+        document.getElementById("by2").innerHTML = "this is my function" + "  " + girl;
+     </script>
+</body>
+</html>

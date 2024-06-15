@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+     <h2>events</h2>
+     <p id="hi"></p>
+     <p id="hi1"></p>
+     <button onclick="demo()">click me</button><br><br>
+     <button onclick="document.getElementById('hi1').innerHTML='hi vivek😎'">click me</button><br><br>
+     <button onclick="this.innerHTML=Date()">click me</button>
+
+     <h2>b.replace</h2>
+     <p id="hi2"></p>
+     <p id="hi3"></p>
+     <p id="hi4"></p>
+     
+     <h2>console.log()</h2>
+     <p id="hi5">hello niraj</p>
+     <button onclick="myhome()">click me</button>
+     
+     <h2><li>function coll in under</li></h2>
+     <p id="hi6"></p>
+     
+     <script>
+
+        function demo(){
+             document.getElementById("hi").innerHTML ="hi niraj😍";
+        }
+
+         let b = "hi vivek";
+         let b1 = b.replace("vivek","niraj");
+         document.getElementById("hi2").innerHTML = b ;
+         document.getElementById("hi3").innerHTML =  b1 ;
+         document.getElementById("hi4").innerHTML = b + " " + b1 ; 
+
+        function myhome(){
+            let v = document.getElementById("hi5").innerHTML;
+            // console.log(v);
+            document.getElementById("hi5").innerHTML = v.replace("niraj" , "vivek") ;
+        }
+
+        function myname(){
+            document.getElementById("hi6").innerHTML = "hello niraj";
+        }
+        myname()
+     </script>
+</body>
+</html>

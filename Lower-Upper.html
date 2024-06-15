@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2><li>LowerCase / UpperCase</li></h2>
+    <p id="hi"></p>
+    <p id="hi1"></p>
+
+    <p id="hi2"> hi niraj 😎</p>
+    <button onclick="mybool()">click me</button>
+
+
+    <p id="hi3">  HI NIRAJ 😎</p>
+    <button onclick="myroom()">click me</button>
+
+    <script>
+
+       let n = "niraj jambucha  niraj jambucha";
+       let n1 = n.toUpperCase(); 
+       let n2 = n.toLowerCase();
+       document.getElementById("hi").innerHTML = n ;
+       document.getElementById("hi1").innerHTML = n + " " + n1 +  " "  + n2;
+
+        function mybool(){
+            let s = document.getElementById("hi2").innerHTML;
+            s1 = s.toUpperCase();
+            document.getElementById("hi2").innerHTML = s1 ;
+            document.getElementById("hi2").style.backgroundColor = "red";
+            document.getElementById("hi2").style.color = "white";
+            document.getElementById("hi2").style.fontSize = "25px";
+             document.getElementById("hi2").style.padding = "20px";
+             document.getElementById("hi2").style.width = "200px";
+            document.getElementById("hi2").style.margin = "100px";
+            document.getElementById("hi2").style.textAlign = "center";
+            document.getElementById("hi2").style.border  = " 4px solid black";
+            document.getElementById("hi2").style.borderRadius = "20px";
+        }
+
+        function myroom(){
+            let r = document.getElementById("hi3").innerHTML;
+            r1 = r.toLowerCase();
+            document.getElementById("hi3").innerHTML = r1 ;
+            document.getElementById("hi3").style.backgroundColor = "red";
+            document.getElementById("hi3").style.color = "white";
+            document.getElementById("hi3").style.fontSize = "25px";
+             document.getElementById("hi3").style.padding = "20px";
+             document.getElementById("hi3").style.width = "200px";
+            document.getElementById("hi3").style.margin = "100px";
+            document.getElementById("hi3").style.textAlign = "center";
+            document.getElementById("hi3").style.border  = " 4px solid black";
+            document.getElementById("hi3").style.borderRadius = "20px";
+        }
+
+    </script>
+    
+</body>
+</html>

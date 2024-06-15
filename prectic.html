@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>petarn (*)</h1>
+    <input type="text" id="ram">
+    <button onclick="ram()">click</button>
+    <p id="sita"></p>
+
+
+    <h1>result 📑</h1>
+    <input type="text" id="new">
+    <button onclick="myroom()">submit</button>
+    <p id="demo"></p>
+
+
+    <h1>form 📄</h1>
+    <textarea name="" id="niraj" cols="30" rows="10">hello niraj</textarea>
+    <button onclick="mydove()">click</button>
+
+    
+    <h1>marks 📊</h1>
+    <input type="text" id="love">
+    <button onclick="love()">submit</button>
+    <p id="khush"></p>
+
+
+
+
+     <script>
+         function ram(){
+             let v = document.getElementById("ram").value;
+            let n = " ";
+             for(let a=1; a<=v; a++){
+                // n += "*  *  *  *  *" ;
+             for(let b=1; b<=a; b++){
+                
+               n += " * ";
+            }
+               n += "<br>"
+            }
+            document.getElementById("sita").innerHTML = n;
+        }
+
+
+        function myroom(){
+            let x = document.getElementById("new").value;
+            let y
+        if((x >= 91) && (x <= 100)){
+            y = "Outstanding performance in exam - A1 pass🤑";
+        }else if((x >= 81) && (x <= 90)){
+            y = " very Good performance in exam - A2 pass😃";
+        }else if((x >= 71) && (x <= 80)){
+            y = "Good performance in exam - B1 pass😊";
+        }else if((x >= 50) && (x <= 70)){
+            y = "Work a little harder - B2 pass😧 ";
+        }else if((x >= 33) && (x <= 49)){
+            y = "'try agin in better performance - C pass🙁'";
+        }else if((x >= 1) && (x <= 32)){
+            y = "'you are fali in exam - C1 😭'";
+       }else {
+            y = "'plese chek your deta  ❌'"
+        
+       }
+            document.getElementById("demo").innerHTML = y;
+    }
+
+    function mydove(){
+        let h  = document.getElementById("niraj").innerHTML = "niraj jambucha"
+    }
+
+    function love(){
+         let a = document.getElementById("love").value;
+        //  console.log(l);
+         let b = (a/7);
+         document.getElementById("khush").innerHTML = b + "%";
+    }
+ 
+     </script>
+
+     
+    
+    
+    
+</body>
+</html>
